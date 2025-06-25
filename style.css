@@ -1,0 +1,69 @@
+body {
+  background: url('https://www.freepik.com/free-photo/blue-blank-notepad-with-copy-space_7348471.htm#fromView=keyword&page=1&position=1&uuid=a6444089-6965-426b-a124-efbc43e19474&query=Calculation+Background') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 320px;
+}
+
+.display {
+  width: 100%;
+  height: 60px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: right;
+  padding-right: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  color: #333;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+button.operator {
+  background: #f7b733;
+  color: white;
+}
+
+button.equal {
+  background: #fc4a1a;
+  color: white;
+  grid-column: span 2;
+}
+
+button.clear {
+  background: #4ABDAC;
+  color: white;
+}
